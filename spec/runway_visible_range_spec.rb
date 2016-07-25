@@ -39,7 +39,7 @@ describe Metar::RunwayVisibleRange do
       ['understands feet',                        'R12/3400FT',         ['12',  [1036.32, nil, nil],        nil,                  nil]],
       ['understands second visibilities (m)',     'R26/0750V1200U',     ['12',  [ 750.0,  nil, nil],        [1200.0, nil, nil],   :improving]],
       ['understands second visibilities (ft)',    'R12/1800V3400FT',    ['12',  [548.64, nil, nil],         [1036.32, nil, nil],  nil]],
-      ['understands second RVR (ft) w/ tendency', 'R29/1800V3400FT/U',  ['29',  [548.64, nil, nil],         [1036.32, nil, nil],  nil]],
+      ['understands second RVR (ft) w/ tendency', 'R29/1800V3400FT/U',  ['29',  [548.64, nil, nil],         [1036.32, nil, nil],  :improving]],
       ['returns nil for nil',                     nil,                  [nil,   nil,                        nil,                  nil]],
     ].each do |docstring, raw, expected|
       example docstring do
