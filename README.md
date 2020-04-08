@@ -91,7 +91,7 @@ Translations are available for the following languages (and region):
 * :'en-US'
 * :it
 * :'pt-BR'
-* 
+
 Thanks to the I18n gem's fallback mechanism, under regional locales, language generic
 translations will be used if a region-specific translation is not available.
 I.e.
@@ -99,6 +99,10 @@ I.e.
 I18n.locale = :'en-US'
 I18n.t('metar.station_code.title') # station code
 ```
+
+# The METAR Format
+
+See `doc/metar_format`.
 
 # Compliance
 
